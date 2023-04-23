@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import Signin from './pages/signin';
+import Signin from './src/pages/signin'
 
 export default function App() {
   return (

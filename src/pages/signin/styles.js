@@ -4,7 +4,7 @@ export const KeyboardView = styled.KeyboardAvoidingView`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: #0e1845;
+  background-color: #09184D;
 `
 
 export const Container = styled.View`
@@ -33,7 +33,7 @@ export const Input = styled.TextInput`
 `
 
 export const ButtonSubmit = styled.TouchableOpacity`
-  background-color: #00008a;
+  background-color: #7B5Bf2;
   border-radius: 9px;
   width: 90%;
   padding: 20px;
