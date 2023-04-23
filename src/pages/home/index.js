@@ -13,21 +13,11 @@ import {
 function Signin({navigation}) {
   return(
     <KeyboardView>
-      <Header />
       <Container>
-        <Title>Login</Title>
-        <Input 
-          placeholderTextColor="#fff"
-          placeholder="E-mail"
-        />
-        <Input 
-          placeholderTextColor="#fff"
-          placeholder="Senha"
-          secureTextEntry
-        />
-        <ButtonSubmit onPress={() => navigation.navigate('Home')}>
+        <Title>HOME</Title>
+        <ButtonSubmit onPress={() => navigation.navigate('Signin')}>
           <TextButton>
-            Entrar
+            Login
           </TextButton>
         </ButtonSubmit>
       </Container>
