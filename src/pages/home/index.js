@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../../components/Header';
 import { 
   KeyboardView, 
@@ -8,21 +8,28 @@ import {
   ButtonSubmit,
   TextButton
 } from './styles';
+import Api from '../../services/api';
 
 
-function Signin({navigation}) {
+function Home({navigation}) {
+  const [ home, setHome ] = useState('');
+
+  const homePage = () => {
+    Api.get('/')
+    .then(response => {})
+    .catch((error) => {
+      console(error);
+    })
+  }
+
+
   return(
     <KeyboardView>
       <Container>
         <Title>HOME</Title>
-        <ButtonSubmit onPress={() => navigation.navigate('Signin')}>
-          <TextButton>
-            Login
-          </TextButton>
-        </ButtonSubmit>
       </Container>
     </KeyboardView>
   )
 }
 
-export default Signin;
+export default Home;
