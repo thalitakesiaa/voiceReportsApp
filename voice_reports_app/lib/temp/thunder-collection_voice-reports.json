@@ -1,0 +1,237 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "voice-reports",
+    "dateExported": "2023-05-02T01:29:03.010Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-03-25T01:09:19.486Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "0468a6ef-d6f7-46fc-bd3e-3afbec9fd201",
+            "name": "session",
+            "containerId": "",
+            "created": "2023-03-25T01:23:27.877Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e1640201-6ef0-414e-9c37-70e014582121",
+            "name": "report",
+            "containerId": "",
+            "created": "2023-05-01T01:55:29.967Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b8f63e3a-b97d-4243-9d39-cc93ddce6ee1",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "",
+            "name": "Home",
+            "url": "http://localhost:3000/api",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-25T00:51:39.172Z",
+            "modified": "2023-03-25T01:12:24.397Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "155b080b-6ca0-48fd-87c6-8fb7e4176199",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "Create User",
+            "url": "http://localhost:3000/api/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-25T01:13:17.924Z",
+            "modified": "2023-04-29T22:51:16.925Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"name\": \"medico\",\n  \"email\": \"medico3@gmail.com\",\n  \"password\": \"4dmin1234\",\n  \"isActive\": true,\n  \"role\": \"Doctor\",\n  \"crm\": \"123456/SP\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4MjgwNzY2NSwiZXhwIjoxNjgyODk0MDY1fQ.YxD5fdViYpqTjMzNJRygQ_wnzd4QseRm0JalcCbZG-o"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b3f491b5-7227-468e-9f8b-6ef8f23d1c3c",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "0468a6ef-d6f7-46fc-bd3e-3afbec9fd201",
+            "name": "Login",
+            "url": "http://localhost:3000/api/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-03-25T01:23:33.165Z",
+            "modified": "2023-04-07T21:23:50.334Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"admin@gmail.com\",\n    \"password\": \"4dmin1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "864863b3-7877-4023-bc6d-f4161ed812a3",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "Alter User",
+            "url": "http://localhost:3000/api/user/alterUser/644d9f856c4012259405c4a5",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-03-25T18:02:09.764Z",
+            "modified": "2023-04-29T23:24:51.079Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"4dmin123\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4MjgxMDE4NiwiZXhwIjoxNjgyODk2NTg2fQ.iid9wcVuWqPSFE4zOdhB-ewVAkEGDiHBJFfvxlEbGB0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c65c77f9-3219-4bca-a400-8bc83cf9959a",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "Remove User",
+            "url": "http://localhost:3000/api/user/remove/64282ab5fee9074e64686853",
+            "method": "DELETE",
+            "sortNum": 75000,
+            "created": "2023-04-07T21:20:54.489Z",
+            "modified": "2023-04-08T12:17:04.868Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4MDk1NjE5MSwiZXhwIjoxNjgxMDQyNTkxfQ.0E-DUlQEyWRCZ5DsAcWUGLsHubJZsA5mNRW29htPchg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "905f1f6e-61c3-4856-9cab-b3882cf8dd5e",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "User all",
+            "url": "http://localhost:3000/api/user",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-03-25T18:32:39.726Z",
+            "modified": "2023-04-29T22:44:07.210Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4MjgwNzY2NSwiZXhwIjoxNjgyODk0MDY1fQ.YxD5fdViYpqTjMzNJRygQ_wnzd4QseRm0JalcCbZG-o"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9dbfec4f-96e7-4f9d-acf0-399471a0f752",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "User by ID",
+            "url": "http://localhost:3000/api/user/64282e05caeebb310cd0909a",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-04-01T14:51:23.778Z",
+            "modified": "2023-04-29T12:30:17.673Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4Mjc3MTM3MCwiZXhwIjoxNjgyODU3NzcwfQ.95YQEu6B_e3atF9I1mjNhtzuhg6arLoRXGTivEYqmkU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f08baccb-b790-42b4-890f-c22f2301be57",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "196d5234-5b67-4699-8b56-0a8a79535707",
+            "name": "Activer/Desactive User",
+            "url": "http://localhost:3000/api/user/activeUser/64282ab5fee9074e64686853",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-04-01T14:52:00.071Z",
+            "modified": "2023-04-08T12:16:43.479Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4MDk1NjE5MSwiZXhwIjoxNjgxMDQyNTkxfQ.0E-DUlQEyWRCZ5DsAcWUGLsHubJZsA5mNRW29htPchg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "66b02517-6234-4406-a9fa-ccbccde67328",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "0468a6ef-d6f7-46fc-bd3e-3afbec9fd201",
+            "name": "Reset Password",
+            "url": "http://localhost:3000/api/login/resetPassword/64282e05caeebb310cd0909a",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-04-02T22:25:50.252Z",
+            "modified": "2023-04-07T21:22:12.786Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d1e14003-6004-49b3-b0d2-65f8e5ef3581",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "e1640201-6ef0-414e-9c37-70e014582121",
+            "name": "MedicalReport",
+            "url": "http://localhost:3000/api/report/create",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-05-01T01:55:46.910Z",
+            "modified": "2023-05-01T16:07:07.228Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"MedicalRecordNumber\": \"12345\",\n  \"TypeExam\": \"Ultrassom\",\n  \"Report\": \"Laudo de que nada consta\",\n  \"CrmDoctor\": \"123456/SP\",\n  \"isFinished\": false,\n  \"isArchived\": false,\n  \"isReviewed\": false\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4Mjk1NjQ5OSwiZXhwIjoxNjgzMDQyODk5fQ.yHeXzeQ7wy5WfFbr9n3ZuB8ILcsEGL27faFj4YCbKWM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cf49c31d-2504-4378-b866-902a980ac19d",
+            "colId": "47e1c461-301d-4d01-9061-bf80fb20eac4",
+            "containerId": "e1640201-6ef0-414e-9c37-70e014582121",
+            "name": "Get All Reports",
+            "url": "http://localhost:3000/api/report",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-05-01T02:39:29.492Z",
+            "modified": "2023-05-01T15:55:13.345Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjgyZTA1Y2FlZWJiMzEwY2QwOTA5YSIsImlhdCI6MTY4Mjk1NjQ5OSwiZXhwIjoxNjgzMDQyODk5fQ.yHeXzeQ7wy5WfFbr9n3ZuB8ILcsEGL27faFj4YCbKWM"
+            },
+            "tests": []
+        }
+    ]
+}

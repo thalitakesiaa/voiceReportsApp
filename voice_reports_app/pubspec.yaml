@@ -1,0 +1,29 @@
+name: voice_reports_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^4.0.4
+  speech_to_text: ^6.1.1
+  highlight_text: ^1.6.0
+  avatar_glow: ^2.0.2
+  dio: ^5.1.1
+  shared_preferences: ^2.0.12
+  localstorage: ^4.0.0+1
+  flutter_svg: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
